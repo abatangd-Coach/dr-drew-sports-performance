@@ -1,67 +1,719 @@
-<section id="apply" class="section-soft">
-  <div class="container grid-2">
-    <div>
-      <div class="eyebrow">Coming Soon</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-```
-  <h2>Youth Athlete Performance Coaching Launching Soon</h2>
+  <title>Dr. Drew Sports Performance | Youth Athlete Coaching</title>
 
-  <p>
-    Dr. Drew Sports Performance is currently building a modern coaching platform designed to help young athletes develop speed, strength, confidence, resilience, and long-term athletic success.
-  </p>
+  <meta
+    name="description"
+    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, golf performance, return-to-sport, and return-to-sport performance coaching by Drew Abatangelo, DPT, SCS, OCS."
+  />
 
-  <p>
-    Future services will include individualized performance plans, remote coaching, video analysis, progress tracking, and return-to-sport programming.
-  </p>
+  <style>
+    :root {
+      --dark: #020617;
+      --navy: #07111f;
+      --card: #0f172a;
+      --soft: #0b1220;
+      --line: #334155;
+      --white: #f8fafc;
+      --muted: #cbd5e1;
+      --bright: #38bdf8;
+      --green: #22c55e;
+      --gold: #facc15;
+    }
 
-  <p>
-    Follow along for updates and future coaching opportunities.
-  </p>
-</div>
+    * {
+      box-sizing: border-box;
+    }
 
-<div class="card">
-  <h3>Future Services</h3>
+    html {
+      scroll-behavior: smooth;
+    }
 
-  <ul>
-    <li>Youth Athlete Development Programs</li>
-    <li>Speed and Agility Training</li>
-    <li>Strength Development Programs</li>
-    <li>Running Performance Coaching</li>
-    <li>Golf Performance Coaching</li>
-    <li>Return-to-Sport Programming</li>
-    <li>Video Analysis</li>
-    <li>Progress Tracking</li>
-    <li>Remote Performance Coaching</li>
-  </ul>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--dark);
+      color: var(--white);
+      line-height: 1.6;
+    }
 
-  <div class="buttons">
-    <a
-      class="btn btn-primary"
-      href="https://instagram.com/drdrewsportspt"
-      target="_blank"
-    >
-      Follow @drdrewsportspt
-    </a>
-  </div>
-</div>
-```
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  </div>
-</section>
+    header {
+      background: rgba(2, 6, 23, 0.94);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-<footer>
-  <div class="footer-inner">
-    <div>
-      <strong>Dr. Drew Sports Performance</strong><br />
-      Youth athlete development, running performance,
-      golf performance, and return-to-sport coaching.
+    .nav {
+      max-width: 1180px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: -0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--muted);
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a:hover {
+      color: var(--bright);
+    }
+
+    .hero {
+      background:
+        linear-gradient(rgba(2, 6, 23, 0.74), rgba(2, 6, 23, 0.92)),
+        radial-gradient(circle at top right, #2563eb, transparent 36%),
+        linear-gradient(135deg, #020617, #0f172a 50%, #172554);
+      padding: 94px 20px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--bright);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 74px);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      margin: 0 0 18px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 23px;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 720px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--bright);
+      color: #00111a;
+    }
+
+    .btn-secondary {
+      border-color: var(--line);
+      color: var(--white);
+      background: rgba(15, 23, 42, 0.72);
+    }
+
+    .hero-card {
+      background: rgba(15, 23, 42, 0.92);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    }
+
+    .stat {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stat:last-child {
+      border-bottom: 0;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      color: var(--white);
+    }
+
+    section {
+      padding: 72px 20px;
+    }
+
+    .section-dark {
+      background: #020617;
+    }
+
+    .section-soft {
+      background: #0b1220;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .card ul {
+      color: var(--muted);
+      padding-left: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 10px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--bright);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .badge-gold {
+      background: rgba(250, 204, 21, 0.12);
+      color: var(--gold);
+      border-color: rgba(250, 204, 21, 0.35);
+    }
+
+    .price {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      margin: 8px 0;
+    }
+
+    .price span {
+      font-size: 16px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .featured {
+      border-color: var(--bright);
+      box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.3);
+    }
+
+    .check {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .about-box {
+      background: linear-gradient(135deg, #0f172a, #082f49);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 32px;
+    }
+
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(15, 23, 42, 0.92));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #020617;
+      color: var(--white);
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    .form-note {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 30px 20px;
+      background: #020617;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 850px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+
+      .hero {
+        padding: 64px 20px;
+      }
+
+      .hero-grid,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 54px 20px;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">Dr. Drew Sports Performance</div>
+
+      <nav class="nav-links">
+        <a href="#youth">Youth Athletes</a>
+        <a href="#programs">Programs</a>
+        <a href="#plans">Plans</a>
+        <a href="#about">About</a>
+        <a href="#apply">Apply</a>
+      </nav>
     </div>
+  </header>
 
-```
-<div>
-  Follow @drdrewsportspt
-</div>
-```
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Youth Athlete Performance Coaching</div>
 
-  </div>
-</footer>
+          <h1>Build faster, stronger, more confident young athletes.</h1>
+
+          <p>
+            Remote and hybrid sports performance coaching for youth athletes who need better movement, strength, speed, confidence, and injury prevention — without random workouts or unsafe training progressions.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#apply">Apply for Youth Coaching</a>
+            <a class="btn btn-secondary" href="#plans">View Coaching Plans</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="stat">
+            <strong>Youth Athlete Development</strong>
+            <span>Speed, strength, agility, coordination, confidence, and long-term athletic growth.</span>
+          </div>
+
+          <div class="stat">
+            <strong>DPT, SCS, OCS</strong>
+            <span>Doctor of Physical Therapy and dual board-certified sports and orthopedic specialist.</span>
+          </div>
+
+          <div class="stat">
+            <strong>Built for Parents + Athletes</strong>
+            <span>Clear plans, safe progressions, accountability, and performance tracking.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="youth" class="section-soft">
+      <div class="container grid-2">
+        <div>
+          <div class="eyebrow">The Main Focus</div>
+
+          <h2>Youth athletes need a foundation, not random conditioning.</h2>
+
+          <p>
+            Many young athletes are told to “get faster,” “get stronger,” or “work harder,” but they are rarely given a structured plan that matches their age, sport, training history, movement quality, and current capacity.
+          </p>
+
+          <p>
+            Dr. Drew Sports Performance helps youth athletes develop the qualities that matter most: movement skill, strength, coordination, speed, durability, confidence, and consistency.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#apply">Start the Application</a>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <h3>Youth Athlete Coaching Can Help With:</h3>
+
+          <ul>
+            <li><span class="check">✓</span> Speed and acceleration development</li>
+            <li><span class="check">✓</span> Strength foundations</li>
+            <li><span class="check">✓</span> Landing, balance, and coordination</li>
+            <li><span class="check">✓</span> Agility and change of direction</li>
+            <li><span class="check">✓</span> Injury prevention habits</li>
+            <li><span class="check">✓</span> Confidence in training</li>
+            <li><span class="check">✓</span> Return-to-sport progression after injury</li>
+            <li><span class="check">✓</span> Parent-friendly structure and accountability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section-dark">
+      <div class="container">
+        <div class="eyebrow">Programs</div>
+
+        <h2>Performance plans for young athletes and competitive athletes.</h2>
+
+        <p>
+          Youth athlete development is the primary focus. Additional sport-specific plans are available for runners, golfers, return-to-sport athletes, and BMX racers.
+        </p>
+
+        <div class="grid-3" style="margin-top: 28px;">
+          <div class="card featured">
+            <span class="badge badge-gold">Primary Program</span>
+            <h3>Youth Athlete Development</h3>
+            <p>
+              A structured performance plan for young athletes who need better movement, strength, coordination, and confidence.
+            </p>
+            <ul>
+              <li>Speed and agility foundations</li>
+              <li>Age-appropriate strength training</li>
+              <li>Landing and deceleration mechanics</li>
+              <li>Mobility and movement quality</li>
+              <li>Injury prevention education</li>
+              <li>Parent and athlete accountability</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="badge">Running Performance</span>
+            <h3>Build durability and reduce breakdown.</h3>
+            <p>
+              Strength and movement programming for youth runners, recreational runners, and athletes returning to running.
+            </p>
+            <ul>
+              <li>Running-specific strength</li>
+              <li>Return-to-run progressions</li>
+              <li>Calf, foot, hip, and trunk capacity</li>
+              <li>Training load guidance</li>
+              <li>Race preparation</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="badge">Golf Performance</span>
+            <h3>Move better and create more efficient power.</h3>
+            <p>
+              Performance coaching for golfers who need better mobility, strength, rotational power, and durability.
+            </p>
+            <ul>
+              <li>Hip and thoracic mobility</li>
+              <li>Rotational strength and power</li>
+              <li>Core control and sequencing</li>
+              <li>Low back, hip, and shoulder resilience</li>
+              <li>Tournament preparation and recovery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <span class="badge">Return to Sport</span>
+            <h3>Bridge the gap between rehab and performance.</h3>
+            <p>
+              For athletes who are cleared from rehab but do not yet feel ready, strong, explosive, or confident.
+            </p>
+            <ul>
+              <li>Strength progressions</li>
+              <li>Jumping, landing, and cutting progressions</li>
+              <li>Return-to-running plans</li>
+              <li>Sport-specific reloading</li>
+              <li>Milestone tracking</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="badge">BMX Performance</span>
+            <h3>Explosive starts, sprint power, and race readiness.</h3>
+            <p>
+              BMX remains a specialty area, with programming for riders who want better gate starts, sprint power, mobility, and recovery.
+            </p>
+            <ul>
+              <li>Gate start development</li>
+              <li>Sprint and acceleration training</li>
+              <li>Strength and power programming</li>
+              <li>Race-week preparation</li>
+              <li>Mobility and recovery routines</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section-soft">
+      <div class="container">
+        <div class="eyebrow">Coaching Plans</div>
+
+        <h2>Simple options for families and athletes.</h2>
+
+        <p>
+          Youth athlete plans are adjusted for age, sport, training history, equipment access, goals, and current movement capacity.
+        </p>
+
+        <div class="grid-3" style="margin-top: 28px;">
+          <div class="card">
+            <span class="badge">Starter</span>
+            <h3>Digital Youth Plan</h3>
+            <div class="price">$29 <span>/month</span></div>
+            <p>Best for families who want structure and a plan to follow.</p>
+            <ul>
+              <li>Monthly training plan</li>
+              <li>Youth-safe strength and movement work</li>
+              <li>Speed and agility foundations</li>
+              <li>Progress tracking</li>
+              <li>Best for self-directed athletes</li>
+            </ul>
+            <a class="btn btn-secondary" href="#apply">Apply</a>
+          </div>
+
+          <div class="card featured">
+            <span class="badge badge-gold">Most Popular</span>
+            <h3>Youth Performance Coaching</h3>
+            <div class="price">$99 <span>/month</span></div>
+            <p>Best for athletes who need coaching support and accountability.</p>
+            <ul>
+              <li>Everything in Digital Youth Plan</li>
+              <li>Monthly plan updates</li>
+              <li>Direct check-ins</li>
+              <li>Monthly video review</li>
+              <li>Adjustments for soreness, pain, or schedule changes</li>
+            </ul>
+            <a class="btn btn-primary" href="#apply">Apply</a>
+          </div>
+
+          <div class="card">
+            <span class="badge">Premium</span>
+            <h3>Performance+</h3>
+            <div class="price">$199 <span>/month</span></div>
+            <p>Best for competitive athletes or return-to-sport athletes needing closer support.</p>
+            <ul>
+              <li>Everything in Youth Performance Coaching</li>
+              <li>Weekly program adjustments</li>
+              <li>Multiple video reviews</li>
+              <li>Competition or season planning</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-secondary" href="#apply">Apply</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 18px;">
+          <h3>Not sure which plan fits?</h3>
+          <p>
+            Apply below and include the athlete’s age, sport, goals, current training schedule, injury history, and what you are hoping to improve. I’ll help recommend the best fit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-dark">
+      <div class="container">
+        <div class="about-box">
+          <div class="eyebrow">About Dr. Drew</div>
+
+          <h2>Drew Abatangelo, DPT, SCS, OCS</h2>
+
+          <p>
+            Dr. Drew is a Doctor of Physical Therapy and dual board-certified specialist with experience supporting athletes through sports medicine, injury prevention, return-to-sport, and performance programming.
+          </p>
+
+          <div class="grid-2" style="margin-top: 20px;">
+            <div>
+              <h3>Credentials</h3>
+              <ul>
+                <li>Doctor of Physical Therapy</li>
+                <li>Board Certified Sports Clinical Specialist</li>
+                <li>Board Certified Orthopaedic Clinical Specialist</li>
+                <li>Sports medicine and performance background</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Experience</h3>
+              <ul>
+                <li>Youth athlete development and injury prevention</li>
+                <li>USA Cycling BMX support experience</li>
+                <li>USOPC Sports Medicine Volunteer experience</li>
+                <li>College athletics sports performance experience</li>
+                <li>Golf event sports medicine and recovery support experience</li>
+              </ul>
+            </div>
+          </div>
+
+          <p style="margin-top: 18px;">
+            The mission is to help young athletes train with purpose, build confidence, reduce injury risk, and develop the physical foundation they need for long-term success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" class="section-soft">
+      <div class="container grid-2">
+        <div>
+          <div class="eyebrow">Apply for Coaching</div>
+
+          <h2>Tell me about the athlete.</h2>
+
+          <p>
+            Complete the application below. Include the athlete’s age, sport, goals, training experience, current schedule, and any injury or pain history.
+          </p>
+
+          <p>
+            This form currently opens your email app. You can replace it later with a full online intake form, booking calendar, or payment system.
+          </p>
+        </div>
+
+        <div class="card">
+          <form action="mailto:info@drdrewsportsperformance.com" method="post" enctype="text/plain">
+            <input type="text" name="Parent or Athlete Name" placeholder="Parent or athlete name" required />
+
+            <input type="email" name="Email" placeholder="Email" required />
+
+            <input type="text" name="Athlete Age" placeholder="Athlete age" required />
+
+            <select name="Sport" required>
+              <option value="">Choose primary sport</option>
+              <option>Youth Athlete Development</option>
+              <option>Running</option>
+              <option>Golf</option>
+              <option>Lacrosse</option>
+              <option>Field / Court Sport</option>
+              <option>Return to Sport</option>
+              <option>Other</option>
+              <option>Other</option>
+            </select>
+
+            <select name="Plan Interest" required>
+              <option value="">Plan interested in</option>
+              <option>Digital Youth Plan - $29/month</option>
+              <option>Youth Performance Coaching - $99/month</option>
+              <option>Performance+ - $199/month</option>
+              <option>Not sure yet</option>
+            </select>
+
+            <textarea name="Goals and History" placeholder="Tell me about the athlete’s goals, sport, current training, injury history, schedule, equipment access, and what you want help with." required></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit Application</button>
+
+            <div class="form-note">
+              You can also email directly: info@drdrewsportsperformance.com
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Dr. Drew Sports Performance</strong><br />
+        Youth athlete performance coaching, running performance, golf performance, return-to-sport, and performance.
+      </div>
+
+      <div>
+        Email: info@drdrewsportsperformance.com<br />
+        Instagram: @drdrewsportspt
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
