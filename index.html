@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, golf performance, return-to-sport, and return-to-sport performance coaching by Drew Abatangelo, DPT, SCS, OCS."
+    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, golf performance, return-to-sport, and performance coaching by Drew Abatangelo, DPT, SCS, OCS."
   />
 
   <style>
@@ -305,6 +305,19 @@
       min-height: 120px;
     }
 
+    .checkbox-label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .checkbox-label input {
+      width: auto;
+      margin-top: 5px;
+    }
+
     .form-note {
       font-size: 13px;
       color: var(--muted);
@@ -439,7 +452,7 @@
             <li><span class="check">✓</span> Agility and change of direction</li>
             <li><span class="check">✓</span> Injury prevention habits</li>
             <li><span class="check">✓</span> Confidence in training</li>
-            <li><span class="check">✓</span> Return-to-sport progression after injury</li>
+            <li><span class="check">✓</span> Return-to-sport performance progression after injury</li>
             <li><span class="check">✓</span> Parent-friendly structure and accountability</li>
           </ul>
         </div>
@@ -453,7 +466,7 @@
         <h2>Performance plans for young athletes and competitive athletes.</h2>
 
         <p>
-          Youth athlete development is the primary focus. Additional sport-specific plans are available for runners, golfers, return-to-sport athletes, and BMX racers.
+          Youth athlete development is the primary focus. Additional sport-specific plans are available for runners, golfers, return-to-sport performance athletes, and BMX racers.
         </p>
 
         <div class="grid-3" style="margin-top: 28px;">
@@ -481,7 +494,7 @@
             </p>
             <ul>
               <li>Running-specific strength</li>
-              <li>Return-to-run progressions</li>
+              <li>Return-to-run performance progressions</li>
               <li>Calf, foot, hip, and trunk capacity</li>
               <li>Training load guidance</li>
               <li>Race preparation</li>
@@ -506,15 +519,15 @@
 
         <div class="grid-2" style="margin-top: 18px;">
           <div class="card">
-            <span class="badge">Return to Sport</span>
+            <span class="badge">Return to Sport Performance</span>
             <h3>Bridge the gap between rehab and performance.</h3>
             <p>
-              For athletes who are cleared from rehab but do not yet feel ready, strong, explosive, or confident.
+              For athletes who have completed rehab but do not yet feel ready, strong, explosive, or confident with training and sport demands.
             </p>
             <ul>
               <li>Strength progressions</li>
               <li>Jumping, landing, and cutting progressions</li>
-              <li>Return-to-running plans</li>
+              <li>Return-to-running performance plans</li>
               <li>Sport-specific reloading</li>
               <li>Milestone tracking</li>
             </ul>
@@ -574,7 +587,7 @@
               <li>Monthly plan updates</li>
               <li>Direct check-ins</li>
               <li>Monthly video review</li>
-              <li>Adjustments for soreness, pain, or schedule changes</li>
+              <li>Adjustments for training schedule and goals</li>
             </ul>
             <a class="btn btn-primary" href="#apply">Apply</a>
           </div>
@@ -583,7 +596,7 @@
             <span class="badge">Premium</span>
             <h3>Performance+</h3>
             <div class="price">$199 <span>/month</span></div>
-            <p>Best for competitive athletes or return-to-sport athletes needing closer support.</p>
+            <p>Best for competitive athletes or return-to-sport performance athletes needing closer support.</p>
             <ul>
               <li>Everything in Youth Performance Coaching</li>
               <li>Weekly program adjustments</li>
@@ -598,7 +611,7 @@
         <div class="card" style="margin-top: 18px;">
           <h3>Not sure which plan fits?</h3>
           <p>
-            Apply below and include the athlete’s age, sport, goals, current training schedule, injury history, and what you are hoping to improve. I’ll help recommend the best fit.
+            Apply below and include the athlete’s age, sport, goals, current training schedule, equipment access, and what you are hoping to improve. I’ll help recommend the best fit.
           </p>
         </div>
       </div>
@@ -653,19 +666,30 @@
           <h2>Tell me about the athlete.</h2>
 
           <p>
-            Complete the application below. Include the athlete’s age, sport, goals, training experience, current schedule, and any injury or pain history.
+            Complete the coaching application below. Include the athlete's age, sport, goals, training experience, current schedule, equipment access, and what you would like help improving.
           </p>
 
           <p>
-            This form currently opens your email app. You can replace it later with a full online intake form, booking calendar, or payment system.
+            This form is for sports performance coaching only. Please do not submit medical information, diagnoses, pain reports, insurance information, or protected health information.
           </p>
         </div>
 
         <div class="card">
-          <form action="mailto:info@drdrewsportsperformance.com" method="post" enctype="text/plain">
-            <input type="text" name="Parent or Athlete Name" placeholder="Parent or athlete name" required />
+          <form action="https://formsubmit.co/info@drdrewsportsperformance.com" method="POST">
 
-            <input type="email" name="Email" placeholder="Email" required />
+            <input type="hidden" name="_subject" value="New Athlete Coaching Application">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+
+            <input type="text" name="_honey" style="display:none">
+
+            <input type="text" name="Parent or Guardian Name" placeholder="Parent or guardian name" required />
+
+            <input type="text" name="Athlete Name" placeholder="Athlete name" required />
+
+            <input type="email" name="Email" placeholder="Parent or guardian email" required />
+
+            <input type="tel" name="Phone Number" placeholder="Parent or guardian phone number" required />
 
             <input type="text" name="Athlete Age" placeholder="Athlete age" required />
 
@@ -676,8 +700,8 @@
               <option>Golf</option>
               <option>Lacrosse</option>
               <option>Field / Court Sport</option>
-              <option>Return to Sport</option>
-              <option>Other</option>
+              <option>Return to Sport Performance</option>
+              <option>BMX Racing</option>
               <option>Other</option>
             </select>
 
@@ -689,13 +713,40 @@
               <option>Not sure yet</option>
             </select>
 
-            <textarea name="Goals and History" placeholder="Tell me about the athlete’s goals, sport, current training, injury history, schedule, equipment access, and what you want help with." required></textarea>
+            <textarea
+              name="Performance Goals"
+              placeholder="Tell me about the athlete's sport, goals, current training schedule, equipment access, and what you would like help improving. Please do not include medical information, diagnoses, pain reports, or personal health information."
+              required></textarea>
 
-            <button class="btn btn-primary" type="submit">Submit Application</button>
+            <label class="checkbox-label">
+              <input type="checkbox" name="Parent Guardian Consent" required>
+              <span>
+                I confirm I am the parent or legal guardian if the athlete is under 18 years old.
+              </span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="Coaching Only Acknowledgment" required>
+              <span>
+                I understand this website provides sports performance coaching only and does not provide physical therapy, medical advice, diagnosis, treatment, or rehabilitation services.
+              </span>
+            </label>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="No Medical Information Agreement" required>
+              <span>
+                I agree not to submit medical information, diagnoses, pain reports, insurance information, or protected health information through this form.
+              </span>
+            </label>
+
+            <button class="btn btn-primary" type="submit">
+              Submit Coaching Application
+            </button>
 
             <div class="form-note">
-              You can also email directly: info@drdrewsportsperformance.com
+              Applications are submitted to info@drdrewsportsperformance.com. This form is for sports performance coaching inquiries only.
             </div>
+
           </form>
         </div>
       </div>
@@ -706,7 +757,7 @@
     <div class="footer-inner">
       <div>
         <strong>Dr. Drew Sports Performance</strong><br />
-        Youth athlete performance coaching, running performance, golf performance, return-to-sport, and performance.
+        Youth athlete performance coaching, running performance, golf performance, return-to-sport performance, and sports performance coaching.
       </div>
 
       <div>
