@@ -8,12 +8,13 @@
 
   <meta
     name="description"
-    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, return-to-sport performance, and sports performance coaching by Drew Abatangelo, DPT, SCS, OCS."
+    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, BMX performance, return-to-sport performance, and sports performance coaching by Drew Abatangelo, DPT, SCS, OCS."
   />
 
   <style>
     :root {
       --dark: #020617;
+      --navy: #07111f;
       --card: #0f172a;
       --soft: #0b1220;
       --line: #334155;
@@ -95,18 +96,11 @@
       margin: auto;
     }
 
-    .hero-grid,
-    .grid-2 {
+    .hero-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
+      grid-template-columns: 1.18fr 0.82fr;
+      gap: 36px;
       align-items: center;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
     }
 
     .eyebrow {
@@ -176,17 +170,11 @@
       background: rgba(15, 23, 42, 0.72);
     }
 
-    .hero-card,
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 24px;
-    }
-
     .hero-card {
       background: rgba(15, 23, 42, 0.92);
+      border: 1px solid var(--line);
       border-radius: 24px;
+      padding: 24px;
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
     }
 
@@ -214,11 +202,29 @@
     }
 
     .section-soft {
-      background: var(--soft);
+      background: #0b1220;
     }
 
-    .card ul,
-    .highlight-box ul {
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
+    .card ul {
       color: var(--muted);
       padding-left: 20px;
     }
@@ -348,8 +354,8 @@
       }
 
       .hero-grid,
-      .grid-2,
-      .grid-3 {
+      .grid-3,
+      .grid-2 {
         grid-template-columns: 1fr;
       }
 
@@ -385,10 +391,10 @@
         <div>
           <div class="eyebrow">Youth Athlete Performance Coaching</div>
 
-          <h1>Build faster, stronger, more confident young athletes.</h1>
+          <h1>Build faster, stronger, more confident athletes.</h1>
 
           <p>
-            Remote and hybrid sports performance coaching for youth athletes who need better movement, strength, speed, confidence, and injury prevention — without random workouts or unsafe training progressions.
+            Remote and hybrid sports performance coaching for youth athletes who need better movement, strength, speed, confidence,  without random workouts or unsafe training progressions.
           </p>
 
           <div class="buttons">
@@ -460,7 +466,7 @@
         <h2>Performance plans for young athletes and competitive athletes.</h2>
 
         <p>
-          Youth athlete development is the primary focus. Additional performance coaching is available for runners and athletes returning to sport performance.
+          Youth athlete development is the primary focus. Additional performance coaching is available for runners, athletes returning to sport performance, and BMX racers.
         </p>
 
         <div class="grid-3" style="margin-top: 28px;">
@@ -475,7 +481,6 @@
               <li>Age-appropriate strength training</li>
               <li>Landing and deceleration mechanics</li>
               <li>Mobility and movement quality</li>
-              <li>Injury prevention education</li>
               <li>Parent and athlete accountability</li>
             </ul>
           </div>
@@ -605,8 +610,10 @@
               <h3>Experience</h3>
               <ul>
                 <li>Youth athlete development and injury prevention</li>
+                <li>USA Cycling BMX sports medicine and performance support experience</li>
                 <li>USOPC Sports Medicine Volunteer experience</li>
                 <li>College athletics sports performance experience</li>
+                <li>US Open Golf Performance and Recovery Team experience</li>
                 <li>Return-to-sport performance programming</li>
               </ul>
             </div>
@@ -661,6 +668,7 @@
               <option>Lacrosse</option>
               <option>Field / Court Sport</option>
               <option>Return to Sport Performance</option>
+              <option>BMX Racing</option>
               <option>Other</option>
             </select>
 
@@ -698,12 +706,19 @@
               </span>
             </label>
 
+            <label class="checkbox-label">
+              <input type="checkbox" name="Disclaimer Agreement" required>
+              <span>
+                I understand that Dr. Drew Sports Performance provides sports performance coaching and educational services only. No physical therapy, healthcare, medical advice, diagnosis, treatment, rehabilitation, or medical services are provided through this website, coaching program, emails, messages, forms, or training plans. Participation is voluntary and at my own risk. I understand that any medical concerns, injuries, illnesses, or symptoms should be evaluated by an appropriately licensed healthcare provider.
+              </span>
+            </label>
+
             <button class="btn btn-primary" type="submit">
               Submit Coaching Application
             </button>
 
             <div class="form-note">
-              Applications are submitted to info@drdrewsportsperformance.com. This form is for sports performance coaching inquiries only.
+              Sports Performance Coaching Disclaimer: Dr. Drew Sports Performance provides sports performance coaching and educational services only. Information provided through this website, coaching services, emails, messages, videos, and training plans is not intended to diagnose, treat, cure, or prevent any medical condition or injury. No physical therapist-patient relationship or healthcare provider-patient relationship is established through use of this website or coaching services. Do not submit medical information, diagnoses, pain reports, insurance information, or protected health information through this form.
             </div>
 
           </form>
@@ -712,11 +727,39 @@
     </section>
   </main>
 
+  <section class="section-dark" id="disclaimer">
+    <div class="container">
+      <div class="card">
+        <h3>Sports Performance Coaching Disclaimer</h3>
+
+        <p>
+          Dr. Drew Sports Performance provides sports performance coaching, fitness education, athlete development services, and performance programming only.
+        </p>
+
+        <p>
+          Information provided through this website, coaching services, emails, forms, videos, messages, consultations, and training plans is intended solely for educational and performance purposes and is not medical advice.
+        </p>
+
+        <p>
+          No physical therapy services, healthcare services, medical advice, diagnosis, treatment, rehabilitation, or patient-provider relationship are established through participation in coaching services or use of this website.
+        </p>
+
+        <p>
+          Athletes and parents should consult an appropriately licensed healthcare provider regarding any injury, illness, pain, symptoms, or medical concerns.
+        </p>
+
+        <p>
+          Participation in athletic training and sports performance programs involves inherent risks. By participating, users voluntarily assume responsibility for those risks and acknowledge that they are responsible for their own health, safety, and participation decisions.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
       <div>
         <strong>Dr. Drew Sports Performance</strong><br />
-        Youth athlete performance coaching, running performance, return-to-sport performance, and sports performance coaching.
+        Youth athlete performance coaching, running performance, BMX performance, return-to-sport performance, and sports performance coaching.
       </div>
 
       <div>
