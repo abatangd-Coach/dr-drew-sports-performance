@@ -8,13 +8,12 @@
 
   <meta
     name="description"
-    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, golf performance, return-to-sport, and performance coaching by Drew Abatangelo, DPT, SCS, OCS."
+    content="Youth athlete performance coaching, speed training, strength foundations, injury prevention, running performance, return-to-sport performance, and sports performance coaching by Drew Abatangelo, DPT, SCS, OCS."
   />
 
   <style>
     :root {
       --dark: #020617;
-      --navy: #07111f;
       --card: #0f172a;
       --soft: #0b1220;
       --line: #334155;
@@ -96,11 +95,18 @@
       margin: auto;
     }
 
-    .hero-grid {
+    .hero-grid,
+    .grid-2 {
       display: grid;
-      grid-template-columns: 1.18fr 0.82fr;
-      gap: 36px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
       align-items: center;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
     }
 
     .eyebrow {
@@ -170,11 +176,17 @@
       background: rgba(15, 23, 42, 0.72);
     }
 
+    .hero-card,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 24px;
+    }
+
     .hero-card {
       background: rgba(15, 23, 42, 0.92);
-      border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 24px;
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
     }
 
@@ -202,29 +214,11 @@
     }
 
     .section-soft {
-      background: #0b1220;
+      background: var(--soft);
     }
 
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 24px;
-    }
-
-    .card ul {
+    .card ul,
+    .highlight-box ul {
       color: var(--muted);
       padding-left: 20px;
     }
@@ -354,8 +348,8 @@
       }
 
       .hero-grid,
-      .grid-3,
-      .grid-2 {
+      .grid-2,
+      .grid-3 {
         grid-template-columns: 1fr;
       }
 
@@ -466,7 +460,7 @@
         <h2>Performance plans for young athletes and competitive athletes.</h2>
 
         <p>
-          Youth athlete development is the primary focus. Additional sport-specific plans are available for runners, golfers, return-to-sport performance athletes, and BMX racers.
+          Youth athlete development is the primary focus. Additional performance coaching is available for runners and athletes returning to sport performance.
         </p>
 
         <div class="grid-3" style="margin-top: 28px;">
@@ -502,23 +496,6 @@
           </div>
 
           <div class="card">
-            <span class="badge">Golf Performance</span>
-            <h3>Move better and create more efficient power.</h3>
-            <p>
-              Performance coaching for golfers who need better mobility, strength, rotational power, and durability.
-            </p>
-            <ul>
-              <li>Hip and thoracic mobility</li>
-              <li>Rotational strength and power</li>
-              <li>Core control and sequencing</li>
-              <li>Low back, hip, and shoulder resilience</li>
-              <li>Tournament preparation and recovery</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="grid-2" style="margin-top: 18px;">
-          <div class="card">
             <span class="badge">Return to Sport Performance</span>
             <h3>Bridge the gap between rehab and performance.</h3>
             <p>
@@ -530,21 +507,6 @@
               <li>Return-to-running performance plans</li>
               <li>Sport-specific reloading</li>
               <li>Milestone tracking</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <span class="badge">BMX Performance</span>
-            <h3>Explosive starts, sprint power, and race readiness.</h3>
-            <p>
-              BMX remains a specialty area, with programming for riders who want better gate starts, sprint power, mobility, and recovery.
-            </p>
-            <ul>
-              <li>Gate start development</li>
-              <li>Sprint and acceleration training</li>
-              <li>Strength and power programming</li>
-              <li>Race-week preparation</li>
-              <li>Mobility and recovery routines</li>
             </ul>
           </div>
         </div>
@@ -643,10 +605,9 @@
               <h3>Experience</h3>
               <ul>
                 <li>Youth athlete development and injury prevention</li>
-                <li>USA Cycling BMX support experience</li>
                 <li>USOPC Sports Medicine Volunteer experience</li>
                 <li>College athletics sports performance experience</li>
-                <li>Golf event sports medicine and recovery support experience</li>
+                <li>Return-to-sport performance programming</li>
               </ul>
             </div>
           </div>
@@ -697,11 +658,9 @@
               <option value="">Choose primary sport</option>
               <option>Youth Athlete Development</option>
               <option>Running</option>
-              <option>Golf</option>
               <option>Lacrosse</option>
               <option>Field / Court Sport</option>
               <option>Return to Sport Performance</option>
-              <option>BMX Racing</option>
               <option>Other</option>
             </select>
 
@@ -757,7 +716,7 @@
     <div class="footer-inner">
       <div>
         <strong>Dr. Drew Sports Performance</strong><br />
-        Youth athlete performance coaching, running performance, golf performance, return-to-sport performance, and sports performance coaching.
+        Youth athlete performance coaching, running performance, return-to-sport performance, and sports performance coaching.
       </div>
 
       <div>
