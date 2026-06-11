@@ -207,7 +207,7 @@
 
     .grid-3 {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
     }
 
@@ -391,10 +391,10 @@
         <div>
           <div class="eyebrow">Youth Athlete Performance Coaching</div>
 
-          <h1>Build faster, stronger, more confident athletes.</h1>
+          <h1>Build faster, stronger, more confident young athletes.</h1>
 
           <p>
-            Remote and hybrid sports performance coaching for youth athletes who need better movement, strength, speed, confidence,  without random workouts or unsafe training progressions.
+            Remote and hybrid sports performance coaching for youth athletes who need better movement, strength, speed, confidence, and injury prevention — without random workouts or unsafe training progressions.
           </p>
 
           <div class="buttons">
@@ -466,7 +466,7 @@
         <h2>Performance plans for young athletes and competitive athletes.</h2>
 
         <p>
-          Youth athlete development is the primary focus. Additional performance coaching is available for runners, athletes returning to sport performance, and BMX racers.
+          Youth athlete development is the primary focus. Additional performance coaching is available for runners, athletes returning to sport performance, BMX racers, and teams looking for structured in-season support.
         </p>
 
         <div class="grid-3" style="margin-top: 28px;">
@@ -481,6 +481,7 @@
               <li>Age-appropriate strength training</li>
               <li>Landing and deceleration mechanics</li>
               <li>Mobility and movement quality</li>
+              <li>Injury prevention education</li>
               <li>Parent and athlete accountability</li>
             </ul>
           </div>
@@ -522,7 +523,7 @@
       <div class="container">
         <div class="eyebrow">Coaching Plans</div>
 
-        <h2>Simple options for families and athletes.</h2>
+        <h2>Simple options for families, athletes, and teams.</h2>
 
         <p>
           Youth athlete plans are adjusted for age, sport, training history, equipment access, goals, and current movement capacity.
@@ -570,6 +571,24 @@
               <li>Multiple video reviews</li>
               <li>Competition or season planning</li>
               <li>Priority support</li>
+            </ul>
+            <a class="btn btn-secondary" href="#apply">Apply</a>
+          </div>
+
+          <div class="card">
+            <span class="badge">Team Package</span>
+            <h3>Team Performance Package</h3>
+            <div class="price">$499 <span>/one-time</span></div>
+            <p>
+              Best for coaches or teams who want a structured in-season performance plan without ongoing monthly coaching.
+            </p>
+            <ul>
+              <li>Custom team warm-up structure</li>
+              <li>2 days per week in-season performance plan</li>
+              <li>Speed, mobility, strength, and durability focus</li>
+              <li>Designed around practice and game schedules</li>
+              <li>Coach-friendly format for easy implementation</li>
+              <li>One-time package fee</li>
             </ul>
             <a class="btn btn-secondary" href="#apply">Apply</a>
           </div>
@@ -631,10 +650,10 @@
         <div>
           <div class="eyebrow">Apply for Coaching</div>
 
-          <h2>Tell me about the athlete.</h2>
+          <h2>Tell me about the athlete or team.</h2>
 
           <p>
-            Complete the coaching application below. Include the athlete's age, sport, goals, training experience, current schedule, equipment access, and what you would like help improving.
+            Complete the coaching application below. Include the athlete's age, sport, goals, training experience, current schedule, equipment access, and what you would like help improving. For teams, include sport, age group, season schedule, and number of athletes.
           </p>
 
           <p>
@@ -651,15 +670,15 @@
 
             <input type="text" name="_honey" style="display:none">
 
-            <input type="text" name="Parent or Guardian Name" placeholder="Parent or guardian name" required />
+            <input type="text" name="Parent Guardian Coach or Contact Name" placeholder="Parent, guardian, coach, or contact name" required />
 
-            <input type="text" name="Athlete Name" placeholder="Athlete name" required />
+            <input type="text" name="Athlete or Team Name" placeholder="Athlete or team name" required />
 
-            <input type="email" name="Email" placeholder="Parent or guardian email" required />
+            <input type="email" name="Email" placeholder="Email" required />
 
-            <input type="tel" name="Phone Number" placeholder="Parent or guardian phone number" required />
+            <input type="tel" name="Phone Number" placeholder="Phone number" required />
 
-            <input type="text" name="Athlete Age" placeholder="Athlete age" required />
+            <input type="text" name="Athlete Age or Team Age Group" placeholder="Athlete age or team age group" required />
 
             <select name="Sport" required>
               <option value="">Choose primary sport</option>
@@ -669,6 +688,7 @@
               <option>Field / Court Sport</option>
               <option>Return to Sport Performance</option>
               <option>BMX Racing</option>
+              <option>Team Performance Package</option>
               <option>Other</option>
             </select>
 
@@ -677,12 +697,13 @@
               <option>Digital Youth Plan - $29/month</option>
               <option>Youth Performance Coaching - $99/month</option>
               <option>Performance+ - $199/month</option>
+              <option>Team Performance Package - $499 one-time</option>
               <option>Not sure yet</option>
             </select>
 
             <textarea
               name="Performance Goals"
-              placeholder="Tell me about the athlete's sport, goals, current training schedule, equipment access, and what you would like help improving. Please do not include medical information, diagnoses, pain reports, or personal health information."
+              placeholder="Tell me about the athlete or team goals, sport, current training schedule, equipment access, season schedule, and what you would like help improving. Please do not include medical information, diagnoses, pain reports, or personal health information."
               required></textarea>
 
             <label class="checkbox-label">
@@ -759,7 +780,7 @@
     <div class="footer-inner">
       <div>
         <strong>Dr. Drew Sports Performance</strong><br />
-        Youth athlete performance coaching, running performance, BMX performance, return-to-sport performance, and sports performance coaching.
+        Youth athlete performance coaching, running performance, BMX performance, team performance packages, return-to-sport performance, and sports performance coaching.
       </div>
 
       <div>
